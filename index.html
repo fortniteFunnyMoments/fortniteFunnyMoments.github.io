@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <title>New Tab</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <script type="text/javascript">
+            function display_c(){
+                var refresh=1000; // Refresh rate in milli seconds
+                mytime=setTimeout('display_ct()',refresh)
+            }
+
+            function display_ct() {
+                var x = new Date()
+                var time = x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+                var date = x.getMonth() + "/" + x.getDate() + "/" + x.getYear();
+                document.getElementById("Time").innerHTML = time;
+                document.getElementById("Date").innerHTML = date;
+                display_c();
+            }
+
+        </script>
+
+    </head>
+
+    <body onload="display_ct()">
+
+        <div class="funlinks">
+            <div class="title">after school</div>
+            <br>
+            <a href=https://www.youtube.com>youtube</a>
+            <br>
+            <a href="https://www.reddit.com">reddit</a>
+            <br>
+            <a href="https://www.twitch.com">twitch</a>
+            <br>
+            <a href="https://www.twitter.com">twitter</a>
+        </div>
+
+        <br>
+        <div class="worklinks">
+            <div class="title">school related</div>
+            <br>
+            <a href="https://spsehalova.edupage.org/timeline/">edupage</a>
+            <br>
+            <a href="https://app.slack.com/client/TN3MXDQFP/CN3MXEAFP/thread/CN5U1EF7Y-1571843718.000300">slack</a>
+            <br>
+            <a href="https://www.notion.so/gdevrts/f05f7cec340441f9aeecb31c23f5b3fc?v=f59b807b274d4acb9817fcc7fe0ffaaf">notion</a>
+            <br>
+            <a href="https://track.toggl.com/timer">toggl</a>
+        </div>
+
+        <br>
+        <div class="otherlinks">
+            <div class="title">to dos</div>
+            <br>
+            <a href="https://kidscancode.org/godot_recipes/2d/topdown_movement/">godot</a>
+            <br>
+            <a href="https://kivy.org/doc/stable/guide/basic.html">kivy</a>
+            <br>
+            <a href="https://docs.google.com/presentation/d/1FEYFw8JywpmSfmm0T23PI-miPIRYvWVnc3im1VbNAag/edit#slide=id.g9e0557b4cd_0_61">prezentacia</a>
+            <br>
+            <a href="https://www.overleaf.com/project/5f8ee52cea90f30001a6c007">maturita</a>
+        </div>
+
+        <div class="weathertime">
+            current time : 
+            <h1 id="Time"></h1>
+            today's date : 
+            <h1 id="Date"></h1>
+        </div>
+    </body>

@@ -1,0 +1,29 @@
+:root { 
+    --background:#6272a4; 
+    --border: #ff79c6;
+    --text: white; 
+    --alttext: #8be9fd;
+}
+
+body{
+    background-image: url('');
+}
+
+a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+.otherlinks, .worklinks, .funlinks{
+    color: var(--text);
+    background-color: var(--background);
+    border: 2px solid var(--border);
+    width: 140px;
+    height: 170px;
+    padding: 10px;
+}
+
+.title{
+    text-align: center;
+    color: var(--alttext);
+}
