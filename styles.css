@@ -3,15 +3,35 @@
     --border: #ff79c6;
     --text: white; 
     --alttext: #8be9fd;
+    --redtext: #f1fa8c;
 }
 
 body{
-    background-image: url('');
+    background-image: url(bg1.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #282a36;
 }
 
 a{
     color: var(--text);
     text-decoration: none;
+}
+
+h2, h3{
+    position: absolute;
+    right: 15px;
+    text-decoration: none;
+    color: var(--redtext);
+}
+
+h2{
+    top: 5px;
+}
+
+h3{
+    top: 65px;
 }
 
 .otherlinks, .worklinks, .funlinks{
@@ -26,4 +46,16 @@ a{
 .title{
     text-align: center;
     color: var(--alttext);
+}
+
+.weathertime{
+    position: relative;
+    top: -50%;
+    right: -50%;
+    color: var(--text);
+    background-color: var(--background);
+    border: 2px solid var(--border);
+    padding: 10px;
+    width: 200px;
+    height: 100px;
 }
